@@ -1,0 +1,304 @@
+﻿<Window x:Class="SklepZoologiczny.MaleZwScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SklepZoologiczny"
+        mc:Ignorable="d"
+        Title="MaleZwScreen" Height="2100" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="psy" Content="Psy" Click="psy_click" Grid.Row="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="koty" Content="Koty" Click="koty_click" Grid.Row="2" Grid.Column="1" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="male" Content="Małe Zwierzątka" Click="male_click" Grid.Row="2" Grid.Column="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="gady" Content="Gady i płazy" Click="gady_click" Grid.Row="2" Grid.Column="3" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="ryby" Content="Ryby" Click="ryby_click" Grid.Row="2" Grid.Column="4" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="akc" Content="Akcesoria" Click="akcesoria_click" Grid.Row="2" Grid.Column="5" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+
+        <TextBlock x:Name="logo" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">LOGO</TextBlock>
+        <Button x:Name="koszyk" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Background="Yellow" Height="30" >Twój koszyk</Button>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="7" Content="Dla chomika" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="2">
+            <StackPanel x:Name="male1">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/jr/farm/mcznik/mynarek/w/puszce/dla/gryzoni/4/400/95500_pla_jrfarmruisinger_jrfarm_mehlwuarmer_dose_4.jpg" Stretch="Fill" />
+                <Label Content="JR Farm&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="14,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="3">
+            <StackPanel x:Name="male2">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/versele/laga/crispy/musli/pokarm/dla/winek/morskich/5/400/54015_PLA_Versele_Laga_Crispy_Muesli_Meerschweinchen_2_75KG_5.jpg" Stretch="Fill" />
+                <Label Content="Versele Laga i&#xD;&#xA;Crispy Musli" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4">
+            <StackPanel x:Name="male3">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/3ede8d89526500307d1e9ab16d2dbca8.jpg" Stretch="Fill" />
+                <Label Content="Brit Animals HAMSTER&#xD;&#xA;     " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="11,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="7" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="2">
+            <StackPanel x:Name="male4">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/jr/farm/pieczki/do/gryzienia/2/400/84602_pla_jr_farm_baelle_set_2.jpg" Stretch="Fill" />
+                <Label Content=" JR Farm 3 piłeczki &#xD;&#xA;      do gryzienia" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="21,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="3">
+            <StackPanel x:Name="male5">
+                <Image Source="https://allezoo.com.pl/31090-large_default/dako-art-biszkopty-dla-gryzoni-orzechowe.jpg" Stretch="Fill" />
+                <Label Content=" Biszkopty Orzechowe&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="2,61zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="4">
+            <StackPanel x:Name="male6">
+                <Image Source="https://allezoo.com.pl/83003-large_default/nestor-witaminy-dla-gryzoni-granulat-20g.jpg" Stretch="Fill" />
+                <Label Content=" NESTOR WITAMINY DLA &#xD;&#xA;   GRYZONI GRANULAT" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="1,19zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="8" Grid.ColumnSpan="7" Content="Dla Szczurka, Myszki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="2">
+            <StackPanel x:Name="male7">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/jr/farm/uczta/dla/szczura/2/400/52955_pla_jr_farm_ratten_schmaus_2.jpg" Stretch="Fill" />
+                <Label Content="JR Farm uczta &#xD;&#xA;   dla szczura" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="42,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="3">
+            <StackPanel x:Name="male8">
+                <Image Source="https://www.diawoli.pl/images/produkty_allegro/9716556348/mini/250px_aukcja_2_9716556348.jpg" Stretch="Fill" />
+                <Label Content="BRIT ANIMALS &#xD;&#xA;COMPLETE RAT" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="12,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="4">
+            <StackPanel x:Name="male9">
+                <Image Source="https://www.mainzoo.de/media/image/product/1410/md/jr-farm-food-maus-adult.jpg" Stretch="Fill" />
+                <Label Content="JR FARM KARMA;&#xA;     DLA MYSZKI" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="15,20zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="10" Grid.ColumnSpan="7" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="2">
+            <StackPanel x:Name="male10">
+                <Image Source="https://www.tiendanimal.pt/images_g/lolo-cornetos-3-sabores-roedores.jpg" Stretch="Fill" />
+                <Label Content="VITAPOL ROŻEK DLA&#xD;&#xA;          GRYZONI" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="3,75zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="3">
+            <StackPanel x:Name="male11">
+                <Image Source="https://www.diawoli.pl/images/mini/250px_BIOFEED%20MULTI-VITUM%2030ML.jpg" Stretch="Fill" />
+                <Label Content="BIOFEED MULTI-VITUM&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="17,75zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="4">
+            <StackPanel x:Name="male12">
+                <Image Source="https://naszezoo.com.pl/images/dako-art-dropsy-dla-gryzoni-czekoladowe.jpg" Stretch="Fill" />
+                <Label Content="DAKO-ART Dropsy&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="5,29zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="12" Grid.ColumnSpan="7" Content="Dla Koszatniczki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="2">
+            <StackPanel x:Name="male13">
+                <Image Source="https://tuzoo.pl/environment/cache/images/500_500_productGfx_1000.jpg" Stretch="Fill" />
+                <Label Content="&#xA; &#xA; &#xA;Karma Koszatniczka" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="7,34zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="3">
+            <StackPanel x:Name="male14">
+                <Image Source="https://tuzwierzaki.pl/pol_pl_Megan-Zoo-Box-dla-koszatniczki-420g-10290_1.jpg" Stretch="Fill" Height="121" Margin="0,0,34.4,0" RenderTransformOrigin="0.852,0.519" />
+                <Label Content="MEGAN ZOO-BOX DLA&#xA;      KOSZATNICZKI" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="8,74zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="4">
+            <StackPanel x:Name="male15">
+                <Image Source="https://cziko.com.pl/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/n/a/nature-degu-700.jpg" Stretch="Fill" />
+                <Label Content="VERSELE-LAGA &#xD;&#xA;  Degu Nature" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="15,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+
+        <Label Grid.Row="14" Grid.ColumnSpan="7" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="2">
+            <StackPanel x:Name="male16">
+                <Image Source="https://tuzoo.pl/userdata/public/gfx/1164.jpg" Stretch="Fill" />
+                <Label Content="&#xA; Naturalne Gryzaki" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="3,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="3">
+            <StackPanel x:Name="male17">
+                <Image Source="https://zookoi.pl/1450-home_default/harbal-pets-kroliziolka-800g.jpg" />
+                <Label Content="  Herbal Pets Grysik&#xA; witaminowy z algami " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="3,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="4">
+            <StackPanel x:Name="male18">
+                <Image Source="https://ogrodniczy.com/img/imagecache/3001-4000/0dbb152765dd0f6e55e99e80a854e8ea4c4f4ee9.jpg" Stretch="Fill" />
+                <Label Content="Dropsy Malinowo&#xD;&#xA;   Truskawkowe" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="3,66zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="16" Grid.ColumnSpan="7" Content="Dla Fretki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="2">
+            <StackPanel x:Name="male19">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/gratis/greenwoods/mokra/karma/dla/fretek/x/g/lub/g/8/400/314517_1greenwoods_frettche_8.jpg" Stretch="Fill" />
+                <Label Content="&#xA; Greenwoods" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="22,40zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="3">
+            <StackPanel x:Name="male20">
+                <Image Source="https://ecsmedia.pl/c/dako-art-karma-dla-fretki-360g-b-iext64665185.jpg" />
+                <Label Content="Karma Sucha Fretka&#xA; " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="7,86zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="4">
+            <StackPanel x:Name="male21">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/608aecbdbcdc1dd178da15a9c6cb3718.jpg" Stretch="Fill" Height="130" Margin="0,0,38.4,0" />
+                <Label Content="Vitapol Karma&#xD;&#xA;  " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="13,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="18" Grid.ColumnSpan="7" Content="Przysmaki i Witaminy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="2">
+            <StackPanel x:Name="male22">
+                <Image Source="https://tuzwierzaki.pl/pol_pl_Versele-Laga-Crock-Complete-Chicken-przysmak-z-kurczakiem-dla-fretek-50g-5898_1.jpg" Height="127" Margin="0,0,63.4,0" />
+                <Label Content=" VERSELE-LAGA CROCK &#xA;  COMPLETE CHICKEN" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="10,24zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="3">
+            <StackPanel x:Name="male23">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/b6c741147a0628fed80ce7b138a0497e.jpg" Height="128" Margin="0,0,65.4,0" />
+                <Label Content="Vitapol Smakers &#xA;      PREMIUM " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="11,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="4">
+            <StackPanel x:Name="male24">
+                <Image Source="https://tuzwierzaki.pl/pol_pm_Beaphar-Witaminy-dla-Fretki-Z-Mikroelementami-i-Tauryna-100g-2314_1.jpg" Margin="0,0,38.4,0" Height="127" />
+                <Label Content="BEAPHAR WITAMINY&#xA;  " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="16,40zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+
+    </Grid>
+</Window>

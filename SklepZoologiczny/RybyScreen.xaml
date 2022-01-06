@@ -1,0 +1,179 @@
+﻿<Window x:Class="SklepZoologiczny.RybyScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SklepZoologiczny"
+        mc:Ignorable="d"
+        Title="RybyScreen" Height="1300" Width="900">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="psy" Content="Psy" Click="psy_click" Grid.Row="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="koty" Content="Koty" Click="koty_click" Grid.Row="2" Grid.Column="1" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="male" Content="Małe Zwierzątka" Click="male_click" Grid.Row="2" Grid.Column="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="gady" Content="Gady i płazy" Click="gady_click" Grid.Row="2" Grid.Column="3" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="ryby" Content="Ryby" Click="ryby_click" Grid.Row="2" Grid.Column="4" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="akc" Content="Akcesoria" Click="akcesoria_click" Grid.Row="2" Grid.Column="5" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+
+        <TextBlock x:Name="logo" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">LOGO</TextBlock>
+        <Button x:Name="koszyk" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Background="Yellow" Height="30" >Twój koszyk</Button>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="7" Content="Pokarm w płatkach" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="2">
+            <StackPanel x:Name="ryby1">
+                <Image Source="https://www.plantica.pl/168866-large_default/tropical-wysokobialkowy-pokarm-platki-12g.jpg" Stretch="Fill" Height="134" Margin="0,0,10.4,0" />
+                <Label Content="TROPICAL" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="2,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="3">
+            <StackPanel x:Name="ryby2">
+                <Image Source="https://www.plantica.pl/168817-large_default/tropical-ichtio-vit-uniwersalny-pokarm-platki-12g.jpg" Stretch="Fill" Height="134" Margin="0,0,10.4,0" />
+                <Label Content="Tropical Ichtio" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="2,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4">
+            <StackPanel x:Name="ryby3">
+                <Image Source="https://media.os.fressnapf.com/products/img/1001820/1001820_8829067351765.jpg" Stretch="Fill" />
+                <Label Content="Tetra Pokarm w płatkach&#xD;&#xA;     " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="18,40zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="7" Content="Pokarm w tabletkach" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="2">
+            <StackPanel x:Name="ryby4">
+                <Image Source="https://www.plantica.pl/168428-large_default/tropical-supervit-tablets-a-tabletki-50ml-80szt.jpg"  Stretch="Fill" Height="134" Margin="0,0,10.4,0" />
+                <Label Content=" Tropical Supervit" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="10,50zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="3">
+            <StackPanel x:Name="ryby5">
+                <Image Source="https://www.karusek.com.pl/img_prod/b/b_29893.png" Height="130" Margin="0,0,55.4,0" />
+                <Label Content="TROPICAL SUPERVIT &#xD;&#xA;        TABLETS B " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="9,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="4">
+            <StackPanel x:Name="ryby6">
+                <Image Source="https://www.plantica.pl/189811-large_default/tetra-tablets-tabimin-dla-ryb-dennych-58-tabletek.jpg" Stretch="Fill" Height="126" Margin="0,0,27.4,0" />
+                <Label Content="Tetra Tablets TabiMin&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="11,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="8" Grid.ColumnSpan="7" Content="Granulat i pałeczki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="2">
+            <StackPanel x:Name="ryby7">
+                <Image Source="https://e-zoo.shop/14562-large_default/tropical-supervit-granulat-torebka-10g.jpg" Stretch="Fill" />
+                <Label Content="TROPICAL SUPERVIT &#xD;&#xA;       GRANULAT" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="2,35zzł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="3">
+            <StackPanel x:Name="ryby8">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/fc5f3991ca32b5bf233947c271cd199b.jpg" Stretch="Fill" />
+                <Label Content="&#xD;&#xA;Tropical Pond Sticks Mixed" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="7,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="4">
+            <StackPanel x:Name="ryby9">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/3f03302b1696eefea13b4edc76f2d34d.jpg" Stretch="Fill" Height="126" Margin="0,0,63.4,0" />
+                <Label Content="Tropical Nanovit&#xA; " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="6,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="10" Grid.ColumnSpan="7" Content="Suplementy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="2">
+            <StackPanel x:Name="ryby10">
+                <Image Source="https://kiwizoo.pl/pol_pl_Tropical-Tropical-wysokoproteinowy-250ML-50g-13097_1.png"  Stretch="Fill"/>
+                <Label Content="  &#xD;&#xA;&#xD;&#xA;Tropical Tropical&#xD;&#xA; wysokoproteinowy" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="8,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="3">
+            <StackPanel x:Name="ryby11">
+                <Image Source="https://www.plantica.pl/168866-large_default/tropical-wysokobialkowy-pokarm-platki-12g.jpg" Stretch="Fill" Height="124" Margin="0,0,18.4,0" />
+                <Label Content="          Tropical 12g &#xD;&#xA;wysokobiałkowy pokarm " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="2,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="4">
+            <StackPanel x:Name="ryby12">
+                <Image Source="https://www.plantica.pl/168913-large_default/tropical-dafnia-suszona-rozwielitka-witaminy-100ml.jpg" Stretch="Fill" Height="119" Margin="0,0,23.4,0" />
+                <Label Content="Tropical DAFNIA &#xD;&#xA;   " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="6,30zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+    </Grid>
+</Window>

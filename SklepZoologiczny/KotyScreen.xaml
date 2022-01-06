@@ -1,0 +1,173 @@
+﻿<Window x:Class="SklepZoologiczny.KotyScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SklepZoologiczny"
+        mc:Ignorable="d"
+        Title="KotyScreen" Height="1300" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="psy" Content="Psy" Click="psy_click" Grid.Row="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="koty" Content="Koty" Click="koty_click" Grid.Row="2" Grid.Column="1" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="male" Content="Małe Zwierzątka" Click="male_click" Grid.Row="2" Grid.Column="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="gady" Content="Gady i płazy" Click="gady_click" Grid.Row="2" Grid.Column="3" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="ryby" Content="Ryby" Click="ryby_click" Grid.Row="2" Grid.Column="4" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="akc" Content="Akcesoria" Click="akcesoria_click" Grid.Row="2" Grid.Column="5" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+
+        <TextBlock x:Name="logo" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">LOGO</TextBlock>
+        <Button x:Name="koszyk" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Background="Yellow" Height="30" >Twój koszyk</Button>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="7" Content="Karma Sucha" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="2">
+            <StackPanel x:Name="kot1">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/zl/taniej/purizon/g/sucha/karma/dla/kota/w/super/cenie/4/400/73339_pla_purizon_cat_sterilised_400_g_4.jpg" Stretch="Fill" />
+                <Label Content="Purizon&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="13,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="3">
+            <StackPanel x:Name="kot2">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/iams/pro/active/health/adult/multicat/household/2/800/61031_pla_iams_multicat_adult_senior_2.jpg" Stretch="Fill" />
+                <Label Content="IAMS&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="35,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4">
+            <StackPanel x:Name="kot3">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/smilla/adult/sensitive/bez/zb/drb/2/800/110020_pla_smilla_sensitiveadult_poultry_1kg_2.jpg" Stretch="Fill" />
+                <Label Content="Smilla Adult Sensitive,&#xD;&#xA;       bez zbóż, drób" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="14,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="7" Content="Karma Mokra" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="2">
+            <StackPanel x:Name="kot4">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/korzystny/pakiet/animonda/carny/adult/x/g/6/800/51179_pla_animonda_carny_adult_rind_huhn_entenherzen_400g_hs_01_6.jpg" Stretch="Fill" />
+                <Label Content="     Korzystny pakiet &#xD;&#xA;Animonda Carny Adult" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="57.80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="3">
+            <StackPanel x:Name="kot5">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/catessy/kawaeczki/w/sosie/i/galarecie/x/g/0/400/1_28346_pla_catessy_gravy_duck_400g_0.jpg" Stretch="Fill" />
+                <Label Content="Catessy Kawałeczki&#xD;&#xA; w sosie i galarecie" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="29,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="4">
+            <StackPanel x:Name="kot6">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/dolina/noteci/premium/x/g/0/800/124515_pla_dolina_noteci_reich_an_kalb_400g_0.jpg" Stretch="Fill" />
+                <Label Content="Dolina Noteci Premium&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="66,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="8" Grid.ColumnSpan="7" Content="Przysmaki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="2">
+            <StackPanel x:Name="kot7">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/catessy/sticks/5/800/69510_pla_catessy_sticks_bbqturkey_5.jpg" Stretch="Fill" />
+                <Label Content="Catessy Sticks&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="9,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="3">
+            <StackPanel x:Name="kot8">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/wild/freedom/freezedried/snacks/puca/jagnice/1/800/104226_pla_wild_freedom_freeze_dried_lammlunge_35g_1.jpg" Stretch="Fill" />
+                <Label Content="     Wild Freedom&#xD;&#xA;Freeze-Dried Snacks" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="19.80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="4">
+            <StackPanel x:Name="kot9">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/smilla/soft/sticks/g/5/800/smilla_softsticks_duck_50g_1000x1000_5.jpg" Stretch="Fill" />
+                <Label Content="Smilla Soft Sticks;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="4,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="10" Grid.ColumnSpan="7" Content="Suplementy i witaminy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="2">
+            <StackPanel x:Name="kot10">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/felini/complete/penowartociowy/dodatek/do/pokarmu/9/800/27256_pla_felini_complete_250g_9.jpg" Stretch="Fill" />
+                <Label Content="Felini Complete&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="159,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="3">
+            <StackPanel x:Name="kot11">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/gimcat/multiwitamina/extra/pasta/witaminowa/0/800/25247_pla_gimcat_multivitamin_extra_offen_0.jpg" Stretch="Fill" />
+                <Label Content="GimCat MULTIwitamina&#xD;&#xA;                Extra" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="32,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="4">
+            <StackPanel x:Name="kot12">
+                <Image Source="https://groomershop.pl/media/catalog/product/thumbnail/89e1b83c3bdfb76bca0025d7180bc42e/image/0/1000x1000/111/80/7/1/71dd15bcce68c246dd8149d1fd2a0623.jpg" Stretch="Fill" />
+                <Label Content="Pokusa MultiVit Cat&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="27,19zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        
+
+    </Grid>
+</Window>

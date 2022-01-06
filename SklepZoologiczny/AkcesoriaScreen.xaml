@@ -1,0 +1,633 @@
+﻿<Window x:Class="SklepZoologiczny.AkcesoriaScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SklepZoologiczny"
+        mc:Ignorable="d"
+        Title="AkcesoriaScreen" Height="4400" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="psy" Content="Psy" Click="psy_click" Grid.Row="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="koty" Content="Koty" Click="koty_click" Grid.Row="2" Grid.Column="1" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="male" Content="Małe Zwierzątka" Click="male_click" Grid.Row="2" Grid.Column="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="gady" Content="Gady i płazy" Click="gady_click" Grid.Row="2" Grid.Column="3" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="ryby" Content="Ryby" Click="ryby_click" Grid.Row="2" Grid.Column="4" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="akc" Content="Akcesoria" Click="akcesoria_click" Grid.Row="2" Grid.Column="5" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+
+        <TextBlock x:Name="logo" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">LOGO</TextBlock>
+        <Button x:Name="koszyk" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Background="Yellow" Height="30" >Twój koszyk</Button>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="7" Content="Zabawki dla Psa" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="2">
+            <StackPanel x:Name="ak1">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/bday/dog/zabawka/dla/psa/6/800/86497_pla_birthday_dog_fg_1985_6.jpg" Stretch="Fill" />
+                <Label Content="B'day Dog zabawka" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="19,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="3">
+            <StackPanel x:Name="ak2">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/kong/cuteseas/omiornica/7/800/492023_kong_oktopus_7.jpg" Stretch="Fill" />
+                <Label Content="KONG Cuteseas&#xD;&#xA;   ośmiornica" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="19,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4">
+            <StackPanel x:Name="ak3">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/kong/scrunch/knots/lis/7/800/66026_kong_scrunch_knots_fuchs_7.jpg" Stretch="Fill" />
+                <Label Content="KONG Scrunch Knots Lis" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="29,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="7" Content="Zabawki dla Kota" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="2">
+            <StackPanel x:Name="ak4">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/trixie/catch/the/balls/zabawka/dla/kota/9/800/74838_pla_trixie_spielturm_kunststoff_hs1_9.jpg" Stretch="Fill"/>
+                <Label Content="Trixie Catch the Balls" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="37,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="3">
+            <StackPanel x:Name="ak5">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/zabawki/dla/kota/komplet/sztuk/0/800/99010_pla_katzenspielzeug_set_22_st_fg_9533_0.jpg" Stretch="Fill"/>
+                <Label Content="Zabawki dla kota" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="29,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="4">
+            <StackPanel x:Name="ak6">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/mata/do/zabawy/little/leo/9/800/73434_pla_spielbogen_litte_leo_fg_5093_9.jpg" Stretch="Fill"  />
+                <Label Content="Mata do zabawy&#xD;&#xA;     Little Leo" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="8" Grid.ColumnSpan="7" Content="Zabawki dla małych zwierzątek" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="2">
+            <StackPanel x:Name="ak7">
+                <Image Source="https://image.ceneostatic.pl/data/products/99129638/i-zabawki-dla-chomika-swinka-morska-zabawka-pilka-kroliczek-krolik-zabawki-do-zucia-dla-chomikow-wielobarwnosc-homyl.jpg" Stretch="Fill"  />
+                <Label Content="ZABAWKI DLA CHOMIKA" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="101,16zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="3">
+            <StackPanel x:Name="ak8">
+                <Image Source="https://m.media-amazon.com/images/I/61jeMPDEQqS._AC_SL1500_.jpg" Stretch="Fill" />
+                <Label Content="Namiot TSLBW" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="32,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="4">
+            <StackPanel x:Name="ak9">
+                <Image Source="https://media.os.fressnapf.com/products/img/1007717_1/1007717_1_8832566122197.jpg" Stretch="Fill"  />
+                <Label Content="Europet Bernina&#xA; potrójny kokos &#xA;z drabinką i linką" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="135,50zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="10" Grid.ColumnSpan="7" Content="Dla Fretki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="2">
+            <StackPanel x:Name="ak10">
+                <Image Source="https://3.allegroimg.com/s1024/0c35e1/31135e824e6c9eca52720797d7d3" Stretch="Fill"  />
+                <Label Content="&#xD;&#xA;LEGOWISKO DLA FRETKI" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="35,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="3">
+            <StackPanel x:Name="ak11">
+                <Image Source="https://zoowilczek.pl/pol_pl_Trixie-PLAC-ZABAW-zabawka-d-FRETKI-szczura35x15cm-6780_1.jpg" Stretch="Fill"  />
+                <Label Content="Trixie PLAC ZABAW" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="45,79zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="4">
+            <StackPanel x:Name="ak12">
+                <Image Source="https://image.ceneostatic.pl/data/products/9388934/i-zolux-muscat-paradise-island-tree-drapak-dla-fretek-lub-kociat.jpg" Stretch="Fill" />
+                <Label Content="Zolux Muscat Paradise&#xD;&#xA;          Island Tree" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="125,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="12" Grid.ColumnSpan="7" Content="Dla Myszki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="2">
+            <StackPanel x:Name="ak13">
+                <Image Source="https://allezoo.com.pl/47224-thickbox_default/trixie-zabawka-dla-gryzoni-marchewka-ze-sznurkiem-20cm.jpg" Stretch="Fill"  />
+                <Label Content="TRIXIE ZABAWKA" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="11,89zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="3">
+            <StackPanel x:Name="ak14">
+                <Image Source="https://allezoo.com.pl/47170-thickbox_default/trixie-kolowrotek-karuzela-cicha-dla-gryzoni.jpg" Stretch="Fill"  />
+                <Label Content="KOŁOWROTEK KARUZELA" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="39,29zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="4">
+            <StackPanel x:Name="ak15">
+                <Image Source="https://allezoo.com.pl/57224-thickbox_default/pinokio-zabawka-dla-gryzoni-labirynt-15cm.jpg" Stretch="Fill" />
+                <Label Content="PINOKIO ZABAWKA" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="5,79zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="14" Grid.ColumnSpan="7" Content="Sianko i ściółka" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="2">
+            <StackPanel x:Name="ak16">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/bunny/siano/kowe/8/800/515703_pla_bunny_heu_naturschutzwiesen_neu_8.jpg" Stretch="Fill"  />
+                <Label Content="Bunny Special Edition" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="99,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="3">
+            <StackPanel x:Name="ak17">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/hansepet/siano/kowe/7/800/24958_hansepet_wiesenheu_2_5kg_detail_7.jpg" Stretch="Fill"  />
+                <Label Content="Hansepet Siano łąkowe" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="21,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="15" Grid.Column="4">
+            <StackPanel x:Name="ak18">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/vilmie/siano/z/grskich/k/6/800/80297_pla_vilmie_wiesenheu_4_kg_6.jpg" Stretch="Fill" />
+                <Label Content=" Vilmie Siano &#xD;&#xA;z górskich łąk" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="16" Grid.ColumnSpan="7" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="2">
+            <StackPanel x:Name="ak19">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/chipsi/classic/podcika/dla/maych/zwierzt/8/400/2202_jrs_chipsiclassic_copy_2_8.jpg" Stretch="Fill"  />
+                <Label Content="Chipsi Classic podściółka" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="12,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="3">
+            <StackPanel x:Name="ak20">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/chipsi/granulat/kukurydziany/4/800/4762_PLA_jrs_chipsi_mais_4.jpg" Stretch="Fill"  />
+                <Label Content="Chipsi granulat &#xD;&#xA;  \kukurydziany" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="17" Grid.Column="4">
+            <StackPanel x:Name="ak21">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/bunny/bedding/cosy/3/800/73379_pla_bunny_beddingcosy_3.jpg" Stretch="Fill" />
+                <Label Content="Bunny Bedding Cosy" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="47,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="18" Grid.ColumnSpan="7" Content="Terrarium" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="2">
+            <StackPanel x:Name="ak22">
+                <Image Source="https://terrasklep.pl/2237-thickbox_default/terrarium-szklane-30x30x30cm-repti-planet.jpg" Stretch="Fill"  />
+                <Label Content=" 30x30x30cm&#xD;&#xA;REPTI PLANET" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="149,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="3">
+            <StackPanel x:Name="ak23">
+                <Image Source="https://www.invital.pl/upload_pl/32230-1107408521.jpg" Stretch="Fill"  />
+                <Label Content="Repti Zoo Wacool&#xD;&#xA;   21x21x30 cm" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="164,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="19" Grid.Column="4">
+            <StackPanel x:Name="ak24">
+                <Image Source="https://www.cdiscount.com/pdt2/0/0/4/1/700x700/non3336023095004/rw/zolux-terrarium-karapas-pour-tortue-terrestre-l.jpg" Stretch="Fill" />
+                <Label Content="ZOLUX Terrarium &#xD;&#xA;    Karapas Terra" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="229zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="20" Grid.ColumnSpan="7" Content="Domki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="21" Grid.Column="2">
+            <StackPanel x:Name="ak25">
+                <Image Source="https://i.erli.pl/unoqf.593277.xxl.webp" Stretch="Fill"  />
+                <Label Content="Drewniany mostek" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="6.89zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="21" Grid.Column="3">
+            <StackPanel x:Name="ak26">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/jr/farm/domek/z/siana/duy/1/800/95499_pla_jrfarmruisinger_jrfarm_heu_haus_500g_1.jpg" Stretch="Fill"  />
+                <Label Content=" JR Farm domek" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="37,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="21" Grid.Column="4">
+            <StackPanel x:Name="ak27">
+                <Image Source="https://allezoo.com.pl/52273-thickbox_default/pinokio-domek-dla-swinki-morskiej.jpg" Stretch="Fill" />
+                <Label Content="PINOKIO DOMEK" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,29zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="22" Grid.ColumnSpan="7" Content="Akwarium" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="23" Grid.Column="2">
+            <StackPanel x:Name="ak28">
+                <Image Source="https://www.aquael.pl/wp-content/uploads/2018/07/timthumb-php__921.jpg" Stretch="Fill"  />
+                <Label Content="OVAL 50 40L 50x30x30" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="129,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="23" Grid.Column="3">
+            <StackPanel x:Name="ak29">
+                <Image Source="https://www.aquael.pl/wp-content/uploads/2018/07/timthumb-php__186.jpg" Stretch="Fill"  />
+                <Label Content="GLASS BOWL 23 4.5L" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="44,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="23" Grid.Column="4">
+            <StackPanel x:Name="ak30">
+                <Image Source="https://www.invital.pl/upload_pl/29670-1412142670.jpg" Stretch="Fill" />
+                <Label Content="    INVITAL EasyTank&#xD;&#xA;CASCADE LED 17 litrów" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="209,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="24" Grid.ColumnSpan="7" Content="Dodatki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="25" Grid.Column="2">
+            <StackPanel x:Name="ak31">
+                <Image Source="https://m.media-amazon.com/images/I/71DBORNY69L._AC_SL1500_.jpg" Stretch="Fill" Height="126" Margin="0,0,57.4,0"  />
+                <Label Content="spongebob's ananas" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="38,84zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="25" Grid.Column="3">
+            <StackPanel x:Name="ak32">
+                <Image Source="https://m.media-amazon.com/images/I/81WmH6y5jWL._AC_SL1500_.jpg" Stretch="Fill"  />
+                <Label Content="Nobby Akropolis" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="101,12zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="25" Grid.Column="4">
+            <StackPanel x:Name="ak33">
+                <Image Source="https://www.invital.pl/upload_pl/37748-1108235163.jpg" Stretch="Fill" />
+                <Label Content="Ośmiornica Hank" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="19,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="26" Grid.ColumnSpan="7" Content="Smycze, Szelki, Obroże" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="27" Grid.Column="2">
+            <StackPanel x:Name="ak34">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/hunter/smycz/regulowana/modern/art/rowobiaa/0/800/185598_185599_pla_hunter_verstellbare_fuehrleine_modern_art_pinkwei__200cm_hs_01_0.jpg" Stretch="Fill" />
+                <Label Content="HUNTER Smycz" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="59,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="27" Grid.Column="3">
+            <StackPanel x:Name="ak35">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/smycz/hunter/tripoli/ta/1/800/184901_pla_hunter_fuehrleine_tripoli_gelb_15mm_200cm_hs_01_1.jpg" Stretch="Fill"  />
+                <Label Content="Smycz HUNTER Tripoli" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="25,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="27" Grid.Column="4">
+            <StackPanel x:Name="ak36">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/komplet/heim/buffalo/koniakowy/obroa/smycz/1/800/11744_heim_set_buffalo_1.jpg" Stretch="Fill" />
+                <Label Content="Komplet Heim Buffalo" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="109,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+       
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="28" Grid.Column="2">
+            <StackPanel x:Name="ak37">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/trixie/obroa/dla/kota/my/home/6/800/27324_pla_trixie_katzenhalsband_rot_hs_01_6.jpg" Stretch="Fill" />
+                <Label Content="Trixie obroża dla kota" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content=" 9,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="28" Grid.Column="3">
+            <StackPanel x:Name="ak38">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/szelki/dla/kota/trixie/xcat/z/naklejkami/i/smycz/2/800/457257_xcat_katzengeschirr_mit_leine_und_sticker_fg_dsc1337_2.jpg" Stretch="Fill"  />
+                <Label Content="Szelki Trixie XCat" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="34,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="28" Grid.Column="4">
+            <StackPanel x:Name="ak39">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/szelki/curli/vest/airmesh/czerwone/2/800/176020_176698_pla_curli_vest_geschirr_airmesh_rot_hs_01_2.jpg" Stretch="Fill" />
+                <Label Content="Szelki Curli Vest&#xD;&#xA;     Air-Mesh" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="109,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="29" Grid.Column="2">
+            <StackPanel x:Name="ak40">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/hunter/obroa/rocky/petit/czarna/6/800/184543_184544_pla_hunter_halsband_rocky_petit_schwarz_hs_01_6.jpg" Stretch="Fill" />
+                <Label Content="HUNTER Obroża &#xD;&#xA;     Rocky Petit" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content=" 109,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="29" Grid.Column="3">
+            <StackPanel x:Name="ak41">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/hunter/obroa/rocky/petit/czerwonoczarna/3/800/184541_184542_pla_hunter_halsband_rockypetit_rotschwarz_dog_hs_01_3.jpg" Stretch="Fill"  />
+                <Label Content="HUNTER Obroża &#xD;&#xA;     Rocky Petit" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="109,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="29" Grid.Column="4">
+            <StackPanel x:Name="ak42">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/hunter/obroa/diamond/petit/czarna/5/800/185704_185706_185708_184538_184539_184540_pla_hunter_halsband_diamond_petit_schwarz_hs_01_5.jpg" Stretch="Fill" />
+                <Label Content="HUNTER Obroża &#xD;&#xA;  Diamond Petit" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="109,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="30" Grid.ColumnSpan="7" Content="Transportówki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="31" Grid.Column="2">
+            <StackPanel x:Name="ak43">
+                <Image Source="https://www.naszezoo.pl/userdata/gfx/456fcc8da27c8958890b9bbb09a150cb.jpg" Stretch="Fill" />
+                <Label Content="Stefanplast Transporter&#xD;&#xA;         Midi Gulliver" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="60,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="31" Grid.Column="3">
+            <StackPanel x:Name="ak44">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/trixie/transporter/tinos/0/800/72380_pla_trixie_tinos_02_0.jpg" Stretch="Fill"  />
+                <Label Content="Trixie Transporter Tinos" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="49,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="31" Grid.Column="4">
+            <StackPanel x:Name="ak45">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/torba/podrna/first/class/basic/3/800/109203_pla_transporthuette_fg_9916_3.jpg" Stretch="Fill" />
+                <Label Content="Torba podróżna &#xD;&#xA; First Class Basic" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="99,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="32" Grid.ColumnSpan="7" Content="Kuwety i Żwirki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="33" Grid.Column="2">
+            <StackPanel x:Name="ak46">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/trixie/primo/xxl/odkryta/kuweta/dla/kota/4/800/1_114580_pla_trixie_katzentoilette_primoxxl_rand_blauweiss_hs_01_4.jpg" Stretch="Fill" />
+                <Label Content="Trixie Primo XXL" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="89,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="33" Grid.Column="3">
+            <StackPanel x:Name="ak47">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/savic/hop/in/kuweta/dla/kota/3/400/71915_pla_savic_katzentoilettehopin_hs_01_3.jpg" Stretch="Fill"  />
+                <Label Content="Savic Hop In" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="94,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="33" Grid.Column="4">
+            <StackPanel x:Name="ak48">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/savic/nestor/kuweta/dla/kota/5/800/50931_PLA_Savic_Katzentoilette_Nestor_284046_nestor_koud_grijs_gedetoureerdkopie__5.jpg" Stretch="Fill" />
+                <Label Content="Savic Nestor" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="49,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="34" Grid.Column="2">
+            <StackPanel x:Name="ak49">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/cats/best/smart/pellets/wirek/zbrylajcy/si/6/800/48617_pla_catsbest_smallpellets_10kg_6.jpg" Stretch="Fill" />
+                <Label Content="Cat's Best Smart Pellets" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="58,90zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="34" Grid.Column="3">
+            <StackPanel x:Name="ak50">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/cats/best/original/wirek/zbrylajcy/si/6/400/20342_pla_catsbest_original_5l_6.jpg" Stretch="Fill"  />
+                <Label Content="Cat's Best Original" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="17,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="34" Grid.Column="4">
+            <StackPanel x:Name="ak51">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/tigerino/crystals/fun/kolorowy/wirek/dla/kota/3/800/1_65524_pla_tigerino_crystals_funpink_5l_3.jpg" Stretch="Fill" />
+                <Label Content="Tigerino Crystals Fun" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="21,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="35" Grid.ColumnSpan="7" Content="Budy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="36" Grid.Column="2">
+            <StackPanel x:Name="ak52">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/buda/dla/psa/spike/all/seasons/6/800/58518_pla_hundehuette_spike_all_season_07_12_2013_dsc1646_6.jpg" Stretch="Fill" />
+                <Label Content="Spike All Seasons" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="484,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="36" Grid.Column="3">
+            <StackPanel x:Name="ak53">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/buda/dla/psa/ferplast/dogvilla/z/tworzywa/sztucznego/6/800/62250_PLA_Ferplast_Kunststoffhundehuette_Dogvilla_HS03_0200003887_6.jpg" Stretch="Fill"  />
+                <Label Content="Ferplast Dogvilla" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="379,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="36" Grid.Column="4">
+            <StackPanel x:Name="ak54">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/prince/domek/dla/kotw/i/maych/psw/9/800/37836_pla_katzenhaus_prince_fg_4250_9.jpg" Stretch="Fill" />
+                <Label Content="   Prince domek dla&#xD;&#xA; kotów i małych psów" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="229,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="37" Grid.Column="2">
+            <StackPanel x:Name="ak55">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/weranda/domek/dla/kotw/i/maych/psw/4/800/100823_pla_katzenhaus_sonnendach_fg_5059_4.jpg" Stretch="Fill" />
+                <Label Content=" Weranda domek dla&#xD;&#xA; kotów i małych psów" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <Label Content="379,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"/>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"/>
+            </StackPanel>
+        </Border>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,201 @@
+﻿<Window x:Class="SklepZoologiczny.PsyScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SklepZoologiczny"
+        mc:Ignorable="d"
+        Title="PsyScreen" Height="1800" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="psy" Content="Psy" Click="psy_click" Grid.Row="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="koty" Content="Koty" Click="koty_click" Grid.Row="2" Grid.Column="1" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="male" Content="Małe Zwierzątka" Click="male_click" Grid.Row="2" Grid.Column="2" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="gady" Content="Gady i płazy" Click="gady_click" Grid.Row="2" Grid.Column="3" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="ryby" Content="Ryby" Click="ryby_click" Grid.Row="2" Grid.Column="4" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+        <Button x:Name="akc" Content="Akcesoria" Click="akcesoria_click" Grid.Row="2" Grid.Column="5" Background="#30e691" BorderBrush="Black" BorderThickness="1"></Button>
+
+        <TextBlock x:Name="logo" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">LOGO</TextBlock>
+        <Button x:Name="koszyk" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Background="Yellow" Height="30" >Twój koszyk</Button>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="7" Content="Karma Sucha" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="2">
+            <StackPanel x:Name="karma1">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/briantos/adult/jagnicina/ry/0/800/66220_pla_briantos_adult_lamm_reis_14kg_0.jpg" Stretch="Fill" />
+                <Label Content="Briantos Adult,&#xD;&#xA;jagnięcina i ryż" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="74,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="3">
+            <StackPanel x:Name="karma2">
+                <Image Source="https://zoo24.pl/18206-large_default/dolina-noteci-rafi-karma-sucha-jagniecina-10kg.jpg" Stretch="Fill" />
+                <Label Content="DOLINA NOTECI &#xD;&#xA;Rafi JAGNIĘCINA" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="75,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="5" Grid.Column="4">
+            <StackPanel x:Name="karma3">
+                <Image Source="https://apetete.pl/media/product/g000729/brit-premium-by-nature-adult-large-l_1.png" Stretch="Fill" />
+                <Label Content="  Brit Premium &#xD;&#xA;By Nature Adult" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="67,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="7" Content="Karma Bezzbożowa" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="2">
+            <StackPanel x:Name="karma4">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/briantos/adult/oso/z/ziemniakami/bez/zb/1/800/briantos_hund_adult_salmon_12kg_1000x1000_1.jpg" Stretch="Fill" />
+                <Label Content="    Briantos Adult,&#xD;&#xA;łosoś z ziemniakami" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="109,00zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="3">
+            <StackPanel x:Name="karma5">
+                <Image Source="https://media.os.fressnapf.com/products/img/1084043002/1084043002_8826528782037.png" Stretch="Fill" />
+                <Label Content="PREMIERE Best Meat &#xD;&#xA;    Adult Wołowina" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="119,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="7" Grid.Column="4">
+            <StackPanel x:Name="karma6">
+                <Image Source="https://www.hurtowniakarm.pl/img/product_media/dede(1).png" Stretch="Fill" />
+                <Label Content="  KARMA DLA PSA &#xD;&#xA;CANUN DOG MENU" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="98,06zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Label Grid.Row="8" Grid.ColumnSpan="7" Content="Karma Mokra" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="2">
+            <StackPanel x:Name="karma7">
+                <Image Source="https://media.os.fressnapf.com/products/img/1100367/1100367_8853634438869.jpg" Stretch="Fill" />
+                <Label Content="      FIT+FUN &#xD;&#xA;Fit + Fun Ragout" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="26,94zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="3">
+            <StackPanel x:Name="karma8">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/pedigree/adult/classic/x/g/2/400/55090_pla_pedigree_3sorten_fleisch_400g_2.jpg" Stretch="Fill" />
+                <Label Content="Pedigree puszki&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="89,60zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="9" Grid.Column="4">
+            <StackPanel x:Name="karma9">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/rocco/classic/x/g/4/400/beef_chicken_800g_1000x1000_161223_4.jpg" Stretch="Fill" />
+                <Label Content="Rocco Classic&#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="37,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="10" Grid.ColumnSpan="7" Content="Przysmaki" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="2">
+            <StackPanel x:Name="karma10">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/caniland/soft/kawaeczki/koniny/bez/zb/pwilgotne/0/800/62504_pla_caniland_soft_pferd_540g_0.jpg" Stretch="Fill" />
+                <Label Content="Caniland Soft kawałeczki&#xD;&#xA;      koniny bez zbóż" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="24,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="3">
+            <StackPanel x:Name="karma11">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/happy/dog/naturcroq/kawaki/waczy/5/800/140496_pla_interquell_happydog_naturcroq_pansenecken_5kg_hs_01_5.jpg" Stretch="Fill" />
+                <Label Content="Happy Dog NaturCroq, &#xD;&#xA;       kawałki żwaczy" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="104,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="11" Grid.Column="4">
+            <StackPanel x:Name="karma12">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/dogmio/mark/nuggets/przysmak/dla/psa/2/400/301417_dt_marknuggets_2eime_2.jpg" Stretch="Fill" />
+                <Label Content="DogMio Mark Nuggets &#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="11,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Label Grid.Row="12" Grid.ColumnSpan="7" Content="Suplementy i witaminy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Black" FontSize="10" HorizontalAlignment="Center"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="2">
+            <StackPanel x:Name="karma13">
+                <Image Source="https://shop-cdn-m.mediazs.com/bilder/in/delights/vitality/adult/3/800/35757_PLA_8in1_Multivitamin_Adult_3.jpg" Stretch="Fill" />
+                <Label Content="8in1 Delights&#xD;&#xA; Vitality Adult " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="39,80zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="3">
+            <StackPanel x:Name="karma14">
+                <Image Source="https://media.os.fressnapf.com/products/img/1295575/1295575_8841537476309.jpg?t=prod_l" Stretch="Fill" />
+                <Label Content="PREMIERE Raw Kitchen &#xD;&#xA;" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="49,99zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="13" Grid.Column="4">
+            <StackPanel x:Name="karma15">
+                <Image Source="https://groomershop.pl/media/catalog/product/thumbnail/a31c75fd666dfee1e7aefbb265804f07/image/0/1000x1000/111/80/0/5/059ab69bd670c82fe09a50465ac256a6.jpg" Stretch="Fill" />
+                <Label Content="  Pokusa GreenLine &#xD;&#xA;MultiVit Dog 120tbl " FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></Label>
+                <Label Content="28,59zł" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Margin="0 -5 0 3"></Label>
+                <Button Content="Kup" Click="kup_click" FontSize="10" Background="Yellow" Width="50" Margin="0 -5 0 0"></Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
